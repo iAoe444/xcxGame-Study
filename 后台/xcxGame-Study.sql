@@ -1,0 +1,17 @@
+use xcx;
+CREATE TABLE IF NOT EXISTS user
+(
+	`openid` CHAR(28) NOT NULL PRIMARY KEY COMMENT '微信openid',
+    `username` VARCHAR(16) NOT NULL COMMENT '用户名',
+	`updated_at` INT NOT NULL DEFAULT 0 COMMENT '更新时间', 
+    `created_at` INT NOT NULL DEFAULT 0 COMMENT '创建时间'
+)ENGINE=InnoDB DEFAULT CHARSET=UTF8 COMMENT='用户表';
+CREATE TABLE IF NOT EXISTS userStudyTime
+(
+	`openid` CHAR(28) NOT NULL PRIMARY KEY COMMENT '微信openid',
+    `dailyTime` DECIMAL(5,2) NOT NULL DEFAULT 0 COMMENT '日学习时长',
+    `weeklyTime` DECIMAL(5,2) NOT NULL DEFAULT 0 COMMENT '周学习时长',
+    `monthlyTime` DECIMAL(5,2) NOT NULL DEFAULT 0 COMMENT '月学习时长',
+	`updated_at` INT NOT NULL DEFAULT 0 COMMENT '更新时间', 
+    `created_at` INT NOT NULL DEFAULT 0 COMMENT '创建时间'
+)ENGINE=InnoDB DEFAULT CHARSET=UTF8 COMMENT='学习时间表';
