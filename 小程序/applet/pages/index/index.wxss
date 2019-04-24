@@ -1,21 +1,41 @@
-/**index.wxss**/
-.userinfo {
+/* pages/start/start.wxss */
+.container{
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  margin:0rpx;
+  padding:0rpx;
+  background: rgb(240, 237, 237);
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.userContainer{
+  width: 100%;
+  height: 30%; 
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.newTask{
+  margin: 0 auto;
+  width: 90%;
+  height: 10%;
+  background:white;
 }
-
-.usermotto {
-  margin-top: 200px;
+.taskText{
+  width: 100%;
+  height: 100%;
+  padding-left: 20rpx;
+}
+.tasksContainer{
+  width: 90%;
+  height: 55%;
+  background: rgb(240, 237, 237);
+}
+.taskSon{
+  margin: 25rpx auto 0px auto;
+  width: 100%;
+  background: white;
+  word-break: break-all;
+  padding:15rpx;
+  border-radius: 10rpx;
 }

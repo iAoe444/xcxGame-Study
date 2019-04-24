@@ -1,0 +1,16 @@
+<view class='index-container'>
+  <canvas style='width:{{canvasWidth}}px;height:{{canvasHeight}}px;' canvas-id="firstCanvas"></canvas>
+  <view class='awardMark'>
+    <view class='title1'>
+      选择你的个人奖励
+    </view>
+    <view class='title2'>
+      明确目标坚定向前
+    </view>
+    <view class='award' wx:for='{{awardArr}}' wx:key = '{{index}}'>
+      <view class='num'>{{index+1}}. </view>  
+      <input class='awardInput' ></input>
+    </view>
+    <view class='finish' bindtap='startStudy'>开启学霸模式</view>
+  </view>
+</view>

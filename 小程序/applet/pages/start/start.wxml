@@ -1,0 +1,52 @@
+<view class='choiceContainer'>
+  <canvas style='width:{{canvasWidth}}px;height:{{canvasHeight}}px;'  canvas-id="firstCanvas">
+  </canvas>
+
+  <view class='panelContainer'>
+    <view class='panel'>
+        <view class='top'>
+          <view class='text1'>
+            选择你的学习目标
+          </view>
+          <view class='text2'>
+            明确目标坚定向前
+          </view>
+          <view class='targetTop'>
+            <view class="targetChoice" bindtap='setColor' data-index='0' style='background:{{color[0].bgColor}};color: {{color[0].textColor}}'>考研</view>
+            <view class="targetChoice" bindtap='setColor' data-index='1' style='background:{{color[1].bgColor}};color: {{color[1].textColor}}'>期末不挂科</view>
+          </view>
+          <view class='targetBottom'>
+            <view class="targetChoice" bindtap='setColor' data-index='2' style='background:{{color[2].bgColor}};color: {{color[2].textColor}}'>六级</view>
+            <view class="targetChoice" bindtap='setColor' data-index='3' style='background:{{color[3].bgColor}};color: {{color[3].textColor}}'>
+              <input type='text' style='width:100%;height:100%;text-align:center' value='其他'>
+              </input>
+            </view>
+          </view>
+        </view>
+        <view class='bottom'>
+
+          <view class='text1'>
+            日常学习的地方
+          </view>
+          <view class='text2'>
+            与他人并肩作战
+          </view>
+          <view class='targetTop'>
+            <view bindtap='setColor2' data-index='0' style='background:{{color2[0].bgColor}};color: {{color2[0].textColor}}'>广师图书馆</view>
+            <view bindtap='setColor2' data-index='1' style='background:{{color2[1].bgColor}};color: {{color2[1].textColor}}'>期末不挂科</view>
+          </view>
+          <view class='targetBottom'> 
+            <view bindtap='setColor2' data-index='2' style='background:{{color2[2].bgColor}};color: {{color2[2].textColor}}'>棠下图书馆</view>
+            <view bindtap='setColor2' data-index='3' style='background:{{color2[3].bgColor}};color: {{color2[3].textColor}}'>
+              <input type='text' style='width:100%;height:100%;text-align:center' value='其他'>
+              </input>
+            </view>
+          </view>
+
+        </view>
+    </view>
+    <view class='nextStep' bindtap='nextPage'>
+      NEXT STEP
+    </view>
+  </view>
+</view>

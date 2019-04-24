@@ -1,11 +1,11 @@
-// pages/mine/mine.js
+// pages/list/list.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo: { image: '../../images/head.jpg', rank: '最强王者', nickname: '只要学不死', motto: '饭可以一日不吃，觉可以一日不睡，书可以一日不读。'}
+
   },
 
   /**

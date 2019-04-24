@@ -1,0 +1,51 @@
+<!-- 这是排行榜 -->
+<view class='container'>
+  <view class='mark'>
+    <view class='title'>
+      <text bindtap='clickListener' wx:for="{{rankText}}" style='font-size:{{rankTextStyle[index].fontSize}}rpx;color: {{rankTextStyle[index].color}}' wx:key='{{rankText}}' data-index = "{{index}}">
+        {{item}}
+      </text>
+    </view>
+  </view>
+
+  <view class='listPanel'>
+      <view class='myRankInfo'>
+          <view class='rankTime'>
+            {{myRankInfo.hours}}<text class='smallText'>时</text> {{myRankInfo.minutes}}<text class='smallText'>分</text>
+          </view>
+          <view class='rankImg'>
+            <image src='{{myRankInfo.image}}'></image>
+          </view>
+          <view class='rankNum'>
+            {{myRankInfo.rankNum}}<text class='smallText'>名</text> 
+          </view>
+      </view>
+      <scroll-view scroll-y="true" class='listInfo'>
+          <view wx:for="{{listInfo}}" wx:key='{{item.image}}' class='listSon'>
+            <view class='left'>
+              <view wx:if="{{index<=2}}" class='rankNumber'>
+                <image src='{{cupImages[index]}}'></image>
+              </view>
+              <view wx:else class='rankNumber'>
+                {{index+1}}
+              </view>
+              <view class='rankHead'>
+                <image src='{{item.image}}'></image>
+              </view>
+              <view class='nameAndTime'>
+                  <view class='name'>
+                    {{item.name}}fdsaaaaaaaaaaaaafdssssss
+                  </view>
+                  <view class='time'>
+                    {{item.hours}} <text >时</text>  
+                    {{item.minutes}} <text> 分</text>
+                  </view>
+              </view>
+            </view>
+            <view class='right'>
+            
+            </view>
+          </view>
+      </scroll-view>
+  </view>
+</view>

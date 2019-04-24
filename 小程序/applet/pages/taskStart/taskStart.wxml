@@ -1,0 +1,49 @@
+<!--pages/taskStart/taskStart.wxml-->
+<view class='taskContainer'>
+  <view class='taskTimer'>
+    <view class='taskMark'>
+        
+
+        <view class='timerBtn'>
+            
+            <canvas class='grayCurcle' style='width:480rpx;height:480rpx;' canvas-id="grayCurcle">
+                
+            </canvas>
+            <canvas class='canvasStyle' style='width:480rpx;height:480rpx;' canvas-id="circleCanvas">
+                
+            </canvas>
+            <view class='playAndStop'>
+                <view bindtap='btnToggle' >
+ <!-- style='width: 150rpx;height: 130rpx;margin: 40rpx 0rpx 0rpx 30rpx;' -->
+                  <image wx:if="{{!btnChange}}" src='../../images/stop.png'>
+                  </image>
+                  <image wx:else src='../../images/play.png'>
+                  </image>
+
+                </view>
+               
+            </view>
+        </view>
+
+        <view class='timer'>
+            {{minutes<10?'0'+minutes:minutes}} 
+
+            <text style='margin:0px 10px;'>:</text>
+
+            {{seconds<10?"0"+seconds:seconds}}
+        </view>
+        <scroll-view scroll-y="true" class='taskText'>
+            {{task}}
+        </scroll-view>
+    </view>
+  </view>
+  <!-- <view class='taskBtn'>
+      <view class='stopAndPlay' bindtap='btnToggle'>
+          <image wx:if="{{!btnChange}}" src='../../images/stop.png'>
+          </image>
+
+          <image style='margin-left:15rpx;width:55%;height:55%;' wx:else src='../../images/play.png'> 
+          </image>
+      </view>
+  </view> -->
+</view>

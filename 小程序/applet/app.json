@@ -1,46 +1,48 @@
 {
   "pages":[
+    "pages/start/start",
+    "pages/list/list",
+    "pages/choosereward/choosereward",
     "pages/index/index",
-    "pages/rankList/rankList",
-    "pages/square/square",
-    "pages/mine/mine"
+    
+    "pages/mine/mine",
+    
+    
+    "pages/taskStart/taskStart",
+    "pages/rank/rank",
+    "pages/logs/logs"
+    
+    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7BBAFF",
+    "navigationBarTitleText": "番茄学习",
+    "navigationBarTextStyle": "white"
   },
-  "tabBar": {
-    "color": "#333",
-    "selectedColor": "#fdb975",
-    "backgroundColor": "#fff",
-    "list": [
+  "tabBar":{
+    "list":[ 
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "icons/home.png",
-        "selectedIconPath": "icons/home.png"
+        "iconPath": "images/task.png",
+        "selectedIconPath": "images/taskSelect.png"
       },
       {
-        "pagePath": "pages/rankList/rankList",
-        "text": "排行榜",
-        "iconPath": "icons/ranklist.png",
-        "selectedIconPath": "icons/ranklist.png"
+        "pagePath": "pages/rank/rank",
+        "iconPath": "images/goldCup.png",
+        "selectedIconPath": "images/goldCupSelect.png"
       },
       {
-        "pagePath": "pages/square/square",
-        "text": "广场",
-        "iconPath": "icons/square.png",
-        "selectedIconPath": "icons/square.png"
+        "pagePath": "pages/list/list",
+        "iconPath": "images/list.png",
+        "selectedIconPath": "images/listSelect.png"
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "我的",
-        "iconPath": "icons/mine.png",
-        "selectedIconPath": "icons/mine.png"
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mineSelect.png"
       }
     ]
+
   }
-  
 }

@@ -1,4 +1,52 @@
-<!--pages/mine/mine.wxml-->
-<view>
-mine
+<view class='mineContainer'>
+  <view class='topRect'>
+  <!-- 这是顶部的蓝色矩形 -->
+  </view>
+  <view class='mineInfo'>
+    <view class='head'>
+      <image src='{{userInfo.image}}'></image>
+      <view>
+        {{userInfo.rank}}
+      </view>
+    </view>
+    <view class='nickName'>
+      <view>
+        {{userInfo.nickname}}
+      </view>
+      <view>
+        {{userInfo.motto}}
+      </view>
+      <view class='symbol'>
+        <image src='../../images/symbol.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='text'>
+    <view class='line'>
+    <!-- 右边的的线 -->
+    </view>
+    <view>
+      设置
+    </view>
+  </view> 
+  <view class='systemParame'>
+    <view class='first'>
+      <image src='../../images/inform.png'></image>
+      通知开关
+      
+      <switch name="switch"  class='switchBtn'/>
+      
+    </view>
+    <view class='second'>
+      <image src='../../images/timeSetting.png'></image>
+      计时设置
+      <image src='../../images/symbol.png'></image>      
+    </view>
+    <view class='third'>
+      <image src='../../images/feedback.png'></image>
+      意见反馈
+      <image src='../../images/symbol.png'></image>
+
+    </view>
+  </view>
 </view>

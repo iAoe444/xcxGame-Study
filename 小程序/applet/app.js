@@ -1,15 +1,44 @@
 //app.js
-const tool = require("./tools/tool.js");
+const tools = require('./tools/tools.js');
+const api = require('./tools/api.js');
 App({
   onLaunch: function () {
-
-    // 隐藏原生的tabbar
-    // wx.hideTabBar();
-
+    // tools.test();
+    
+    wx.login({
+      success: function(res){
+        console.log(res);
+        var data = {
+          "jsCode": res.code
+        };
+        console.log(data);
+        
+        // data = JSON.stringify(data);
+        // console.log(data);
+        // api.getPeopleInfo(data, function (res) {
+        //   console.log(res);
+        // });
+        wx.request({
+          url: 'http://yun.iaoe.xyz/user/userOrCreate',
+          method: 'get',
+          header: {
+              "content-type":"application/json"
+          },   
+          data: data,
+          dataType: 'json',
+          success: function(res){
+            console.log(res);
+          },
+          complete:function(res){
+            console.log(res);
+          }
+        });
+      }
+    })
     // 展示本地存储能力
-    // var logs = wx.getStorageSync('logs') || []
-    // logs.unshift(Date.now())
-    // wx.setStorageSync('logs', logs)
+    var logs = wx.getStorageSync('logs') || []
+    logs.unshift(Date.now())
+    wx.setStorageSync('logs', logs)
 
     // 登录
     wx.login({
@@ -38,8 +67,32 @@ App({
       }
     })
   },
+  //第一种底部  
+  editTabBar: function () {
+    //使用getCurrentPages可以获取当前加载中所有的页面对象的一个数组，数组最后一个就是当前页面。
+
+    var curPageArr = getCurrentPages();    //获取加载的页面
+    var curPage = curPageArr[curPageArr.length - 1];    //获取当前页面的对象
+    var pagePath = curPage.route;    //当前页面url
+    if (pagePath.indexOf('/') != 0) {
+      pagePath = '/' + pagePath;
+    }
+
+    var tabBar = this.globalData.tabBar;
+    for (var i = 0; i < tabBar.list.length; i++) {
+      tabBar.list[i].active = false;
+      if (tabBar.list[i].pagePath == pagePath) {
+        tabBar.list[i].active = true;    //根据页面地址设置当前页面状态    
+      }
+    }
+    curPage.setData({
+      tabBar: tabBar
+    });
+    // console.log(curPage,curPageArr);
+  },
   globalData: {
     userInfo: null,
-    tool:tool
+    //第一种底部导航栏显示
+    
   }
 })

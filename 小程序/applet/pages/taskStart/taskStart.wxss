@@ -1,0 +1,93 @@
+/* pages/taskStart/taskStart.wxss */
+.taskContainer{
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 100%;
+  /* background: #7BBAFF; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.taskTimer{
+  width: 100%;
+  height: 80%;
+  background: #7BBAFF;
+  position: relative;
+}
+.taskMark{
+  position: absolute;
+  bottom: -100rpx;
+  width: 80%;
+  height: 100%;
+  left: 10%;
+  background: white;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timerBtn{
+  width: 80%;
+  height: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.timerBtn canvas{
+  position: absolute;
+  top: 0rpx;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.playAndStop{
+  width:480rpx;
+  height:480rpx;
+  position: absolute;
+  top: 0rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playAndStop>view{
+  width:195rpx;
+  height:195rpx;
+  background: rgb(123,185,254);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playAndStop image{
+  width: 80%;
+  height: 80%;
+}
+.timer{
+  width: 80%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80rpx;
+  font-weight: bold;
+  color: #535353;
+}
+.taskText{
+  width: 80%;
+  height: 20%;
+  word-break: break-all;
+  text-align: center;
+  padding: 10rpx;
+  box-sizing: border-box;
+  color: rgb(147,147,147);
+}

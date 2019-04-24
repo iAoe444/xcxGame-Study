@@ -1,1 +1,165 @@
 /* pages/mine/mine.wxss */
+.mineContainer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  background: rgb(241,241,241);
+}
+.topRect{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 20%;
+  background: rgb(123,186,255);
+}
+.mineInfo{
+  width: 90%;
+  height: 20%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  background: white;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.head{
+  height: 80%;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.head image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 20rpx;
+}
+.head>view{
+  width: 60%;
+  height: 30rpx;
+  background: rgb(123,186,255);
+  font-size: 20rpx;
+  color: white;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 30rpx;
+}
+.nickName{
+  height: 80%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.nickName view:nth-child(1){
+  width: 90%;
+  height: 40%;
+  font-size: 30rpx; 
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-weight: bold;
+}
+.nickName view:nth-child(2){
+  margin-top: 20rpx;
+  width: 85%;
+  height: 40%;
+  font-size: 20rpx;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  color: rgb(166,166,166);
+}
+.symbol{
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  width: 10%;
+  right: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.symbol image{
+  width: 20rpx;
+  height: 30rpx; 
+}
+.text{
+  position: absolute;
+  top: 35%;
+  width: 90%;
+  height: 5%;
+  left: 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 40rpx;
+}
+.text .line{
+  height: 80%;
+  width: 10rpx;
+  background: rgb(123,186,255);
+  float: left;
+  border-radius: 30rpx;
+  margin-right: 20rpx;
+}
+.systemParame{
+  width: 90%;
+  height: 40%;
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  background: white;
+  border-radius: 20rpx;
+  box-shadow: 0 0 1px blur black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.systemParame view{
+  border-bottom: 1px solid rgb(243,243,243);
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.switchBtn{
+  position: absolute;
+  right: 0rpx;
+  top: 30%;
+}
+.systemParame view>image:nth-child(1){
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 15rpx;
+}
+.first{
+  width: 80%;
+  height: 30%;
+ 
+}
+.second{
+  width: 80%;
+  height: 30%;
+}
+.systemParame view.third{
+  width: 80%;
+  height: 30%;  
+  border: 0px;
+}
+.second image:nth-child(2),.third image:nth-child(2){
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 45%;
+  right: 0rpx;
+}

@@ -1,0 +1,167 @@
+page{
+  background: rgb(241,241,241);
+}
+.container{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  margin: 0rpx;
+  padding: 0rpx;
+}
+.mark{
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  background: rgb(123,186,255);
+  top: 0rpx;
+  left: 0rpx;
+}
+.title{
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(217,235,255);
+}
+.title text:nth-child(2){
+  color: white;
+  
+}
+.listPanel{
+  width: 90%;
+  height: 85%;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  background: white;
+  border-radius: 15rpx;
+
+}
+.myRankInfo{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.rankTime{
+  width: 30%;
+  height: 100%;
+   display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.rankImg{
+  width: 30%;
+  height: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.rankImg image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.rankNum{
+  width: 30%;
+  height: 100%; 
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.smallText{
+  color:rgb(178,178,178);
+  font-size: 25rpx;
+  padding-top: 15rpx;
+  margin: 0 5rpx;
+}
+.listInfo{
+  width: 100%;
+  height: 80%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.listSon:nth-child(even){
+  background: white;
+}
+.listSon:nth-child(odd){
+  background: rgb(249,249,249);
+}
+.listSon{
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+.left{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.right{
+  width: 20%;
+  height: 100%;
+}
+.rankNumber{
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rankNumber image{
+  width: 80%;
+  height: 50%;
+}
+.rankHead{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rankHead image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+.nameAndTime{
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.name{
+  width: 100%;
+  height: 40%;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 25rpx;
+  margin-top: 30rpx;
+  color: rgb(171,171,171);
+}
+.time{
+  width: 100%;
+  height: 40%;
+  white-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.time text{
+  color:rgb(171,171,171);
+  font-size: 30rpx;
+}
+

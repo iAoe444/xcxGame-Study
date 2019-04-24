@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -13,8 +13,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.4",
-	"appid": "wx885f1509b37e8216",
-	"projectname": "applet",
+	"appid": "wx86c3926780a8702d",
+	"projectname": "%E7%95%AA%E8%8C%84%E5%AD%A6%E4%B9%A01",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
