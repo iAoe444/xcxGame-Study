@@ -1,18 +1,15 @@
 {
-  "pages":[
+  "pages": [
+    "pages/function/function",
+    "pages/review/review",
     "pages/start/start",
     "pages/list/list",
     "pages/choosereward/choosereward",
     "pages/index/index",
-    
     "pages/mine/mine",
-    
-    
     "pages/taskStart/taskStart",
     "pages/rank/rank",
     "pages/logs/logs"
-    
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,29 +17,24 @@
     "navigationBarTitleText": "番茄学习",
     "navigationBarTextStyle": "white"
   },
-  "tabBar":{
-    "list":[ 
+  "tabBar": {
+    "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "images/task.png",
-        "selectedIconPath": "images/taskSelect.png"
+        "iconPath": "images/tarbar/task_unselect.png",
+        "selectedIconPath": "images/tarbar/task_select.png"
       },
       {
-        "pagePath": "pages/rank/rank",
-        "iconPath": "images/goldCup.png",
-        "selectedIconPath": "images/goldCupSelect.png"
+        "pagePath": "pages/review/review",
+        "iconPath": "images/tarbar/review_unselect.png",
+        "selectedIconPath": "images/tarbar/review_select.png"
       },
       {
-        "pagePath": "pages/list/list",
-        "iconPath": "images/list.png",
-        "selectedIconPath": "images/listSelect.png"
-      },
-      {
-        "pagePath": "pages/mine/mine",
-        "iconPath": "images/mine.png",
-        "selectedIconPath": "images/mineSelect.png"
+        "pagePath": "pages/function/function",
+        "iconPath": "images/tarbar/function_unselect.png",
+        "selectedIconPath": "images/tarbar/function_select.png"
       }
     ]
-
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

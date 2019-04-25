@@ -1,0 +1,68 @@
+<view class='mineContainer'>
+  <view class='topRect'>
+    <!-- 这是顶部的蓝色矩形 -->
+  </view>
+  <view class='dw'>
+    <image class='dwImg' src='/images/dw/wz.png'></image>
+    <view class='dwInfo'>
+      <view class='dwText'>
+        最强王者
+      </view>
+      <view class='starImg'>
+        <image class='star' src='/images/star/star_light.png'></image>
+        <image class='star' src='/images/star/star_dark.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='function'>
+
+    <view class='store functionCard'>
+      <view class='functionInfo'>
+        <view class='functionName'>
+          商 城
+        </view>
+        <view class='functionDetail'>
+          金币 12
+        </view>
+      </view>
+      <image class='functionImg' src='/images/function/store.png'></image>
+    </view>
+
+    <navigator url='/pages/rank/rank' class='ranking functionCard'>
+      <view class='functionInfo'>
+        <view class='functionName'>
+          排行榜
+        </view>
+        <view class='functionDetail'>
+          日排行 23
+        </view>
+      </view>
+      <image class='functionImg' src='/images/function/ranking.png'></image>
+    </navigator>
+
+    <view class='tongji functionCard'>
+      <view class='functionInfo'>
+        <view class='functionName'>
+          统 计
+        </view>
+        <view class='functionDetail'>
+          学习时长 1h23m
+        </view>
+      </view>
+      <image class='functionImg' src='/images/function/tongji.png'></image>
+    </view>
+
+    <view class='setting functionCard'>
+      <view class='functionInfo'>
+        <view class='functionName'>
+          设 置
+        </view>
+        <view class='functionDetail'>
+          一些设置
+        </view>
+      </view>
+      <image class='functionImg' src='/images/function/setting.png'></image>
+    </view>
+
+  </view>
+</view>
