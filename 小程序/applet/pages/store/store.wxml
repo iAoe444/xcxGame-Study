@@ -1,0 +1,45 @@
+<!-- pages/store/store.wxml -->
+<view class='mineContainer'>
+  <view class='topRect'>
+    <!-- 这是顶部的蓝色矩形 -->
+  </view>
+  <view class='topCard'>
+    <image class='userImg' src='/images/head.jpg'></image>
+    <view class='userInfo'>
+      <view class='userName'>学霸模式</view>
+      <view class='coinInfo'>
+        <image class='coin' src='/images/coin.png'></image>
+        <view class='coinText'>目前金币数10</view>
+      </view>
+    </view>
+  </view>
+  <view class='goodsArea'>
+    <view class='goodsCard'>
+      <image mode="aspectFill" class="goodsImg" src="https://ws1.sinaimg.cn/large/006bBmqIgy1g2kzzxh90ij307x05lgor.jpg">
+        <view class="goodsName haveImg">去看一次电影</view>
+      </image>
+      <view class="price">
+        <image class='coin' src='/images/coin.png'></image>
+        <view class='priceText'>25金币</view>
+      </view>
+    </view>
+    <view class='goodsCard'>
+      <image mode="aspectFill" class="goodsImg" src="https://ws1.sinaimg.cn/large/006bBmqIgy1g2l047xh20j307x05lgm4.jpg">
+        <view class="goodsName haveImg">买一本笔记本</view>
+      </image>
+      <view class="price">
+        <image class='coin' src='/images/coin.png'></image>
+        <view class='priceText'>10金币</view>
+      </view>
+    </view>
+    <view class='goodsCard'>
+      <image mode="aspectFill" class="goodsImg" src="">
+        <view class="goodsName">没有图片的情况</view>
+      </image>
+      <view class="price">
+        <image class='coin' src='/images/coin.png'></image>
+        <view class='priceText'>10金币</view>
+      </view>
+    </view>
+  </view>
+</view>

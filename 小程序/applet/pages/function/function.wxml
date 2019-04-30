@@ -16,7 +16,7 @@
   </view>
   <view class='function'>
 
-    <view class='store functionCard'>
+    <navigator url='/pages/store/store' class='store functionCard'>
       <view class='functionInfo'>
         <view class='functionName'>
           商 城
@@ -26,7 +26,7 @@
         </view>
       </view>
       <image class='functionImg' src='/images/function/store.png'></image>
-    </view>
+    </navigator>
 
     <navigator url='/pages/rank/rank' class='ranking functionCard'>
       <view class='functionInfo'>
@@ -52,7 +52,7 @@
       <image class='functionImg' src='/images/function/tongji.png'></image>
     </view>
 
-    <view class='setting functionCard'>
+    <navigator url='/pages/mine/mine' class='setting functionCard'>
       <view class='functionInfo'>
         <view class='functionName'>
           设 置
@@ -62,7 +62,7 @@
         </view>
       </view>
       <image class='functionImg' src='/images/function/setting.png'></image>
-    </view>
+    </navigator>
 
   </view>
 </view>

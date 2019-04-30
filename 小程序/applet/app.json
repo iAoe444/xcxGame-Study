@@ -1,11 +1,12 @@
 {
   "pages": [
-    "pages/function/function",
+    "pages/index/index",
+    "pages/store/store",
     "pages/review/review",
+    "pages/function/function",
     "pages/start/start",
     "pages/list/list",
     "pages/choosereward/choosereward",
-    "pages/index/index",
     "pages/mine/mine",
     "pages/taskStart/taskStart",
     "pages/rank/rank",
@@ -13,7 +14,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#7BBAFF",
+    "navigationBarBackgroundColor": "#5a95ff",
     "navigationBarTitleText": "番茄学习",
     "navigationBarTextStyle": "white"
   },

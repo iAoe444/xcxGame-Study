@@ -1,0 +1,98 @@
+/* pages/store/store.wxss */
+page{
+  background: rgb(248, 251, 252);
+}
+.topRect{
+  background: rgb(90, 149, 255);
+  width: 100%;
+  height: 170rpx;
+  position: absolute;
+}
+.topCard{
+  background-color: white;
+  width: 90%;
+  left: 5%;
+  top: 40rpx;
+  height: 200rpx;
+  position: absolute;
+  border-radius: 5rpx;
+  box-shadow:0px 0px 10px 2px rgba(0, 0, 0, 0.11);
+  display: flex;
+  align-items: center;
+}
+.userImg{
+  width: 130rpx;
+  height: 130rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  border-radius: 50%;
+}
+.userName{
+  font-size: 43rpx;
+  color: black;
+  font-weight: bold;
+}
+.coinInfo{
+  display: flex;
+  align-items: center;
+  margin-top: 15rpx;
+  margin-bottom: 5rpx;
+}
+.coin{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.coinText{
+  font-size: 25rpx;
+  color: rgba(0, 0, 0, 0.7);
+}
+.goodsArea{
+  width: 90%;
+  left: 5%;
+  position: absolute;
+  top: 250rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.goodsCard{
+  margin-top: 50rpx;
+  box-shadow:0px 0px 10px 1px rgba(0, 0, 0, 0.11);
+  border-radius: 5rpx;
+  width: 45%;
+  height: 290rpx;
+  position: relative;
+}
+.goodsImg{
+  width: 100%;
+  height: 220rpx;
+  background-color: rgb(90, 149, 255);
+  position: relative;
+}
+.goodsName{
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  color: white;
+  width: 100%;
+  height: 220rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.haveImg{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.price{
+  position: absolute;
+  width: 100%;
+  top: 220rpx;
+  height: 70rpx;
+  display: flex;
+  font-size: 27rpx;
+  justify-content: center;
+  align-items: center;
+}
